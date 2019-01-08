@@ -1,10 +1,10 @@
 package com.ddcompany.innercore.forms;
 
-import com.ddcompany.innercore.project.structure.*;
+import com.ddcompany.innercore.project.structure.ICApi;
+import com.ddcompany.innercore.project.structure.buildConfig.BCItem;
 import com.ddcompany.innercore.project.structure.buildConfig.BCItemBuildDir;
 import com.ddcompany.innercore.project.structure.buildConfig.BCItemRes;
 import com.ddcompany.innercore.project.structure.buildConfig.BCType;
-import com.ddcompany.innercore.project.structure.buildConfig.BCItem;
 import com.intellij.ide.DataManager;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 
@@ -27,7 +27,7 @@ public class ICProjectPanel {
     private DefaultListModel<BCItem> listModel = new DefaultListModel<>();
 
     public ICProjectPanel() {
-        listModel.addElement(new BCItemBuildDir("dev", "main.js"));
+        listModel.addElement(new BCItemBuildDir("dev/", "main.js"));
         listModel.addElement(new BCItemRes(BCType.TEXTURES, "res/"));
         listModel.addElement(new BCItemRes(BCType.GUI, "gui/"));
         listItems.setModel(listModel);

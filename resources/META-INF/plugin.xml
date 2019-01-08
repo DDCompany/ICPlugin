@@ -15,36 +15,27 @@
     <extensions defaultExtensionNs="com.intellij">
         <directoryProjectGenerator implementation="com.ddcompany.innercore.project.ICProjectGenerator"/>
 
-        <projectService serviceInterface="com.ddcompany.innercore.ICProjectService"
-                        serviceImplementation="com.ddcompany.innercore.ICProjectService"/>
+        <projectService serviceInterface="com.ddcompany.innercore.ICService"
+                        serviceImplementation="com.ddcompany.innercore.ICService"/>
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
-        <group id="InnerPlugin.INNER_GROUP_GENERATE" text="Generate">
-           <add-to-group group-id="GenerateGroup" anchor="last"/>
-           <!--<action id="InnerPlugin.ActionGenerateItem" class="com.ddcompany.innercore.actions.callbacks.item.ActionGenerateItem" text="Generate Item" />-->
+        <group id="ICPlugin.INNER_GROUP_GENERATE" text="Generate">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+            <!--<action id="ICPlugin.ActionGenerateItem" class="com.ddcompany.innercore.actions.callbacks.item.ActionGenerateItem" text="Generate Item" />-->
         </group>
 
-         <action id="InnerPlugin.ActionPushToDevice" class="com.ddcompany.innercore.actions.ActionPushToDevice"
-                text="Push to Device">
+        <group id="ICPlugin.TOOLBAR">
             <add-to-group group-id="ToolbarRunGroup" anchor="after" relative-to-action="RunnerActions"/>
-        </action>
+            <action id="ICPlugin.ActionPush" class="com.ddcompany.innercore.actions.ActionPush"
+                    text="Push to Device"/>
+            <action id="ICPlugin.ActionICStop" class="com.ddcompany.innercore.actions.ActionICStop"
+                    text="Stop InnerCore"/>
+        </group>
 
-        <action id="InnerPlugin.ActionStopInnercore" class="com.ddcompany.innercore.actions.ActionStopInnerCore"
-                text="Stop InnerCore">
-            <add-to-group group-id="ToolbarRunGroup" anchor="after" relative-to-action="InnerPlugin.ActionPushToDevice"/>
-        </action>
-
-        <action id="com.ddcompany.innercore.actions.ActionContextPushToDevice"
-                class="com.ddcompany.innercore.actions.ActionContextPushToDevice" text="Push to Device">
+        <action id="com.ddcompany.innercore.actions.ActionTreePush"
+                class="com.ddcompany.innercore.actions.ActionTreePush" text="Push to Device">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
-        </action>
-
-        <action id="ActionPushToDeviceLast" class="com.ddcompany.innercore.actions.ActionPushToDeviceLast"
-                text="Push last to device">
-            <add-to-group group-id="EditMenu" anchor="last"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl P"/>
         </action>
     </actions>
 </idea-plugin>

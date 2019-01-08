@@ -28,9 +28,9 @@ class BuildConfig(
     fun write() {
         val json = JsonObject()
         json.add("defaultConfig", this.defaultConfig)
-//        json.add("buildDirs", this.buildDirs)
-//        json.add("compile", this.compile)
-//        json.add("resources", this.resources)
+        json.add("buildDirs", this.buildDirs)
+        json.add("compile", this.compile)
+        json.add("resources", this.resources)
 
         this.parentFile.createChild("build.config", json.getPretty())
     }

@@ -2,13 +2,12 @@ package com.ddcompany.innercore.project.structure.buildConfig
 
 import com.ddcompany.innercore.extensions.delIf
 import com.google.gson.JsonObject
-import java.lang.IllegalArgumentException
 
 class BCItemRes(
         private val type: BCType,
         //Должно оканчиваться на "/"
         private val dir: String) : BCItem {
-    private val textureDirs = arrayOf("items-opaque", "terrain-atlas", "armor")
+    private val textureDirs = arrayOf("items-opaque", "terrain-atlas", "particle-atlas", "armor")
 
     override fun generate(buildConfig: BuildConfig) {
         val json = JsonObject()
