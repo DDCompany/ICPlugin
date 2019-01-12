@@ -4,13 +4,10 @@
     <version>1.0</version>
     <vendor>DDCompany</vendor>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="145.0"/>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.lang</depends>
-
+    <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <directoryProjectGenerator implementation="com.ddcompany.innercore.project.ICProjectGenerator"/>
@@ -31,6 +28,11 @@
                     text="Push to Device"/>
             <action id="ICPlugin.ActionICStop" class="com.ddcompany.innercore.actions.ActionICStop"
                     text="Stop InnerCore"/>
+        </group>
+
+        <group id="ICPlugin.MENU">
+            <add-to-group group-id="FileMenu" relative-to-action="InvalidateCaches" anchor="after"/>
+            <action id="ICPlugin.ActionAddLibrary" class="com.ddcompany.innercore.actions.ActionAddLibrary"/>
         </group>
 
         <action id="com.ddcompany.innercore.actions.ActionTreePush"

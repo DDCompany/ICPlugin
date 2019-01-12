@@ -1,6 +1,7 @@
 package com.ddcompany.innercore.project
 
 import com.ddcompany.innercore.ICIcons
+import com.ddcompany.innercore.actions.ActionAddLibrary
 import com.ddcompany.innercore.extensions.createChild
 import com.ddcompany.innercore.extensions.getPretty
 import com.ddcompany.innercore.forms.ICProjectPeer
@@ -21,6 +22,7 @@ class ICProjectGenerator : WebProjectTemplate<ICProjectData>() {
             this.generateModInfo(file, data)
             this.generateConfig(file)
         }
+        ActionAddLibrary.apply(project)
     }
 
     private fun generateConfig(file: VirtualFile) {
