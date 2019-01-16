@@ -3,7 +3,7 @@ package com.ddcompany.innercore.extensions
 import se.vidstige.jadb.JadbDevice
 
 fun JadbDevice.mkdir(path: String) {
-    this.executeShell("mkdir", path)
+    this.executeShell("mkdir", "-p", path)
 }
 
 fun JadbDevice.execApp(pkg: String) {

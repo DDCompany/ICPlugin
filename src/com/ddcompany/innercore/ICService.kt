@@ -18,7 +18,8 @@ class ICService : PersistentStateComponent<ICService> {
     var dir = ""
     var lastPath = ""
     var serial = ""
-    var isRunIC = true
+    var mustRunIC = true
+    var mustPushToRoot = false
 
     override fun getState() = this
 

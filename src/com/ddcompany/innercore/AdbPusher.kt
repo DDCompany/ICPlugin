@@ -40,9 +40,10 @@ object AdbPusher {
                 var okPushed = false
                 while (!okPushed) {
                     try {
+                        val path = this.formatPath(dir, it, project, service.mustPushToRoot)
                         if (it.isDirectory)
-                            device.mkdir(this.formatPath(dir, it, project))
-                        else device.push(File(it.path), RemoteFile(this.formatPath(dir, it, project)))
+                            device.mkdir(path)
+                        else device.push(File(it.path), RemoteFile(path))
                     } catch (e: JadbException) {
                         continue
                     }
@@ -58,7 +59,7 @@ object AdbPusher {
                 indicator.fraction = ++fraction / files.size
             }
 
-            if (service.isRunIC)
+            if (service.mustRunIC)
                 device.restartApp(IC_PKG)
 
             val delta = System.currentTimeMillis() - startTime
@@ -75,8 +76,11 @@ object AdbPusher {
     fun getDevice(serial: String) =
             JadbConnection().devices.find { it.serial == serial }
 
-    private fun formatPath(dir: String, file: VirtualFile, project: Project) =
-            dir + file.path.replaceFirst(project.basePath!!, "")
+    private fun formatPath(dir: String, file: VirtualFile, project: Project, toRoot: Boolean): String {
+        return if (toRoot)
+            "$dir/${file.name}"
+        else dir + file.path.replaceFirst(project.basePath!!, "")
+    }
 
     private fun getForPush(file: VirtualFile): List<VirtualFile> {
         if (!file.isDirectory)

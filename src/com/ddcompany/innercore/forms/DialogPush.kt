@@ -32,7 +32,8 @@ class DialogPush(private val project: Project?, private val file: VirtualFile) :
 
         val service = ICService.get(project!!)
         service.dir = this.panel.dir
-        service.isRunIC = this.panel.mustRunIC()
+        service.mustRunIC = this.panel.mustRunIC()
+        service.mustPushToRoot = this.panel.mustPushToRoot()
         service.serial = device.serial
 
         AdbPusher.push(device, project, file)

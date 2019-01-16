@@ -18,6 +18,7 @@ public class PanelPush {
     private JTextField fieldDir;
     private JCheckBox checkRunIC;
     private JTextField fieldPath;
+    private JCheckBox checkPushToRoot;
 
     PanelPush(Project project, VirtualFile file) throws IOException, JadbException {
         this.list.setCellRenderer(new AdbDevicesCellRenderer());
@@ -35,7 +36,8 @@ public class PanelPush {
     private void setPreviousData(Project project) {
         ICService service = ICService.Companion.get(project);
         this.fieldDir.setText(service.getDir());
-        this.checkRunIC.setSelected(service.isRunIC());
+        this.checkRunIC.setSelected(service.getMustRunIC());
+        this.checkPushToRoot.setSelected(service.getMustPushToRoot());
 
         String serial = service.getSerial();
         if (this.list.getModel().getSize() == 1) {
@@ -70,6 +72,10 @@ public class PanelPush {
 
     boolean mustRunIC() {
         return this.checkRunIC.isSelected();
+    }
+
+    boolean mustPushToRoot() {
+        return this.checkPushToRoot.isSelected();
     }
 
     private class AdbDevicesCellRenderer extends JLabel implements ListCellRenderer<JadbDevice> {
