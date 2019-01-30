@@ -19,7 +19,6 @@ import se.vidstige.jadb.RemoteFile
 import java.io.File
 
 object AdbPusher {
-    private val BLACK_LIST = listOf(".idea", ".git", ".gitignore", "README.md")
     private const val MODS_DIR = "/storage/emulated/0/games/com.mojang/mods/"
     const val IC_PKG = "com.zhekasmirnov.innercore"
 
@@ -35,7 +34,7 @@ object AdbPusher {
             indicator.text = "Getting Files..."
             indicator.isIndeterminate = false
 
-            val files = this.getForPush(file)
+            val files = this.getForPush(file, service)
             files.forEachIndexed { index, it ->
                 var okPushed = false
                 while (!okPushed) {
@@ -82,15 +81,15 @@ object AdbPusher {
         else dir + file.path.replaceFirst(project.basePath!!, "")
     }
 
-    private fun getForPush(file: VirtualFile): List<VirtualFile> {
+    private fun getForPush(file: VirtualFile, service: ICService): List<VirtualFile> {
         if (!file.isDirectory)
             return listOf(file)
 
         val list = VfsUtil.collectChildrenRecursively(file)
         list.removeIf {
             val path = it.path
-            BLACK_LIST.forEach { blackWorld ->
-                if (path.contains(blackWorld))
+            service.pushBlackList.forEach { blackPath ->
+                if (path.startsWith(blackPath))
                     return@removeIf true
             }
 

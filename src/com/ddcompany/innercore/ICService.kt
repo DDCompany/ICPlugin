@@ -20,6 +20,7 @@ class ICService : PersistentStateComponent<ICService> {
     var serial = ""
     var mustRunIC = true
     var mustPushToRoot = false
+    var pushBlackList = ArrayList<String>()
 
     override fun getState() = this
 

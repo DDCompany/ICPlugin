@@ -20,14 +20,14 @@ class DialogPush(private val project: Project?, private val file: VirtualFile) :
         if (panel.dir.isEmpty())
             return ValidationInfo("Mod Directory is not valid!")
 
-        if (panel.list.selectedValue == null)
+        if (panel.listDevices.selectedValue == null)
             return ValidationInfo("Device is not selected!")
 
         return null
     }
 
     override fun doOKAction() {
-        val device = panel.list.selectedValue
+        val device = panel.listDevices.selectedValue
         FileDocumentManager.getInstance().saveAllDocuments()
 
         val service = ICService.get(project!!)
@@ -35,6 +35,7 @@ class DialogPush(private val project: Project?, private val file: VirtualFile) :
         service.mustRunIC = this.panel.mustRunIC()
         service.mustPushToRoot = this.panel.mustPushToRoot()
         service.serial = device.serial
+        service.pushBlackList = this.panel.blackList;
 
         AdbPusher.push(device, project, file)
         this.close(0)
