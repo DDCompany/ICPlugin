@@ -14,6 +14,10 @@
 
         <projectService serviceInterface="com.ddcompany.innercore.ICService"
                         serviceImplementation="com.ddcompany.innercore.ICService"/>
+
+        <psi.referenceContributor implementation="com.ddcompany.innercore.references.ICReferenceContributor"/>
+        <completion.contributor language="JavaScript"
+                                implementationClass="com.ddcompany.innercore.completion.IdCompletionContributor"/>
     </extensions>
 
     <actions>
