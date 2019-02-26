@@ -108,7 +108,6 @@ class TextureReferenceProvider : PsiReferenceProvider() {
 
                             when (type) {
                                 ResourceType.TERRAIN_TEXT -> {
-                                    println(psiElem)
                                     if (psiElem is JSArrayLiteralExpression) {
                                         if (psiElem.expressions.size > 1) {
                                             val expr = psiElem.expressions[1]
