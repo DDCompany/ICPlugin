@@ -17,7 +17,9 @@
 
         <psi.referenceContributor implementation="com.ddcompany.innercore.references.ICReferenceContributor"/>
         <completion.contributor language="JavaScript"
-                                implementationClass="com.ddcompany.innercore.completion.IdCompletionContributor"/>
+                                implementationClass="com.ddcompany.innercore.completion.ICCompletionContributor"/>
+        <fileBasedIndex implementation="com.ddcompany.innercore.index.TexturesIndex$Blocks"/>
+        <fileBasedIndex implementation="com.ddcompany.innercore.index.TexturesIndex$Items"/>
     </extensions>
 
     <actions>

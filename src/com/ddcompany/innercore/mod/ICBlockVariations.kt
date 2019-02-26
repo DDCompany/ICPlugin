@@ -1,12 +1,10 @@
 package com.ddcompany.innercore.mod
 
-import com.ddcompany.innercore.ICIcons
+import com.ddcompany.innercore.index.TexturesIndex
 import com.intellij.lang.javascript.psi.JSArrayLiteralExpression
 import com.intellij.lang.javascript.psi.JSLiteralExpression
 import com.intellij.lang.javascript.psi.JSObjectLiteralExpression
-import java.awt.Image.SCALE_SMOOTH
 import javax.swing.Icon
-import javax.swing.ImageIcon
 
 class ICBlockVariations(
         mod: ICLibMod,
@@ -49,9 +47,6 @@ class ICBlockVariations(
         } ?: ""
 
         //ICON
-        val file = mod.findResByName(textureName, meta, ResourceType.TERRAIN_TEXT)
-        icon = if (file != null) {
-            ImageIcon(ImageIcon(file.path).image.getScaledInstance(16, 16, SCALE_SMOOTH))
-        } else ICIcons.INVALID_16
+        icon = TexturesIndex.getIcon(textureName + "_" + meta, ResourceType.TERRAIN_TEXT, mod.project)
     }
 }

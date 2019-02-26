@@ -65,17 +65,6 @@ open class ICLibMod {
         }
     }
 
-    fun findResByName(name: String, meta: Int, type: ResourceType): VirtualFile? {
-        val fullName = name + "_" + meta
-        this.resources.forEach {
-            it.collectFilesRecurse(type.dir).forEach { file ->
-                if (!file.isDirectory && (file.name == "$fullName.png" || file.name == "$name.png"))
-                    return file
-            }
-        }
-        return null
-    }
-
     fun findBlockIds(): ArrayList<ICBlock> {
         val list = ArrayList<ICBlock>()
         this.find { file, element, module, mod ->
@@ -125,6 +114,9 @@ open class ICLibMod {
             }
         }
     }
+
+    open fun isInResourcesDir(file: VirtualFile, type: ResourceType) =
+            this.resources.any { file.path.startsWith(it.file.path + "/" + type.dir) }
 
     private fun initSrcModules(json: JsonObject, projectDir: VirtualFile) {
         json.getAsJsonArray("buildDirs")?.forEach {

@@ -6,6 +6,23 @@ import com.intellij.psi.search.searches.ReferencesSearch
 import com.intellij.psi.util.PsiTreeUtil
 
 object PsiHelper {
+//    fun elementFromText(text: String, project: Project): PsiFile? {
+//        val fileType = FileTypeManager.getInstance().getFileTypeByExtension("js")
+//        return PsiFileFactory.getInstance(project).createFileFromText("_______.js", JavascriptLanguage.INSTANCE, text, true, false)
+//    }
+
+    fun parentsTreeFollow(element: PsiElement, vararg classes: Class<out PsiElement>): PsiElement? {
+        var current = element
+        classes.forEach {
+            val parent = current.parent
+            if (it.isAssignableFrom(parent::class.java))
+                current = parent
+            else return null
+        }
+
+        return current
+    }
+
     /**
      * Ищет значения выражения
      */
