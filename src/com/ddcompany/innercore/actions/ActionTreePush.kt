@@ -7,7 +7,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.psi.PsiFileSystemItem
 
-class ActionTreePush : AnAction(ICIcons.PHONE) {
+class ActionTreePush : AnAction(ICIcons.PHONE_16) {
     override fun actionPerformed(event: AnActionEvent) {
         val navigatable = event.getData(CommonDataKeys.NAVIGATABLE)
 

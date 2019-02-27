@@ -53,7 +53,7 @@ class ICProjectGenerator : WebProjectTemplate<ICProjectData>() {
 
     override fun getName() = "Inner Core"
 
-    override fun getLogo() = ICIcons.INNERCORE
+    override fun getLogo() = ICIcons.INNERCORE_16
 
     override fun getDescription() = ""
 }
