@@ -153,6 +153,7 @@ open class ICLibMod {
 
         this.jsonParser.parse(FileReader(buildConfig.path))?.let {
             if (it.isJsonObject) {
+                println("json is ok")
                 val json = it.asJsonObject
                 this.initSrcModules(json, projectDir)
                 this.initResModules(json, projectDir)
