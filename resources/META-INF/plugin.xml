@@ -23,9 +23,12 @@
     </extensions>
 
     <actions>
-        <group id="ICPlugin.INNER_GROUP_GENERATE" text="Generate">
+        <group id="ICPlugin.GENERATE">
             <add-to-group group-id="GenerateGroup" anchor="last"/>
+            <add-to-group group-id="FileMenu" relative-to-action="InvalidateCaches" anchor="before"/>
             <!--<action id="ICPlugin.ActionGenerateItem" class="com.ddcompany.innercore.actions.callbacks.item.ActionGenerateItem" text="Generate Item" />-->
+            <action id="ICPlugin.CreateItem" keymap="Ctrl+Shift+Z" text="Create Item"
+                    class="com.ddcompany.innercore.actions.ActionCreateItem"/>
         </group>
 
         <group id="ICPlugin.TOOLBAR">
