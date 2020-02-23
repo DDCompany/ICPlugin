@@ -19,12 +19,13 @@ import se.vidstige.jadb.RemoteFile
 import java.io.File
 
 object AdbPusher {
+    private const val HORIZON_MODS_DIR = "/storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/" //TODO: rewrite
     private const val MODS_DIR = "/storage/emulated/0/games/com.mojang/mods/"
     const val IC_PKG = "com.zhekasmirnov.innercore"
 
     fun push(device: JadbDevice, project: Project, file: VirtualFile) {
         val service = ICService.get(project)
-        val dir = MODS_DIR + service.dir
+        val dir = HORIZON_MODS_DIR + service.dir
         service.lastPath = file.path
 
         val runnable = Runnable {
