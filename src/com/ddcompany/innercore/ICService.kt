@@ -1,5 +1,6 @@
 package com.ddcompany.innercore
 
+import com.ddcompany.innercore.forms.LauncherType
 import com.ddcompany.innercore.mod.ICMod
 import com.intellij.openapi.components.PersistentStateComponent
 import com.intellij.openapi.components.ServiceManager
@@ -20,10 +21,11 @@ class ICService : PersistentStateComponent<ICService> {
         }
     }
 
+    var launcherType = LauncherType.INNER_CORE
     var dir = ""
     var lastPath = ""
     var serial = ""
-    var mustRunIC = true
+    var mustRunApp = true
     var mustPushToRoot = false
     var pushBlackList = ArrayList<String>()
     @Transient

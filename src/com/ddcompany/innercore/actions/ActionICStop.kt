@@ -10,9 +10,9 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 class ActionICStop : AnAction(ICIcons.STOP_16) {
     override fun actionPerformed(event: AnActionEvent) {
         val service = ICService.get(event.project!!)
-        if (!service.serial.isEmpty()) {
+        if (service.serial.isNotEmpty()) {
             val device = AdbPusher.getDevice(service.serial)
-            device?.killApp(AdbPusher.IC_PKG)
+            device?.killApp(service.launcherType.pkg)
         }
     }
 }

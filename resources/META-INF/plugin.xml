@@ -1,10 +1,10 @@
 <idea-plugin>
     <id>com.ddcompany.innercore</id>
     <name>InnerIntegration</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor>DDCompany</vendor>
 
-    <idea-version since-build="145.0"/>
+    <idea-version since-build="173.0"/>
 
     <depends>com.intellij.modules.lang</depends>
     <depends>JavaScript</depends>

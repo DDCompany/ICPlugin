@@ -26,6 +26,7 @@ public class PanelPush {
     private JList<String> listBlackList;
     private JButton btnAddBlack;
     private JButton btnRemBlack;
+    private JComboBox<LauncherType> comboLauncher;
 
     private DefaultListModel<String> modelBlackList = new DefaultListModel<>();
 
@@ -35,6 +36,11 @@ public class PanelPush {
         this.listBlackList.setModel(this.modelBlackList);
         this.listBlackList.setCellRenderer(new BlackListCellRenderer(project));
         this.listBlackList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+
+        for (LauncherType type :
+                LauncherType.values()) {
+            this.comboLauncher.addItem(type);
+        }
 
         if (project.getBasePath() != null) {
             String cutStr = file.getPath().replaceFirst(project.getBasePath(), "");
@@ -59,6 +65,7 @@ public class PanelPush {
                 this.modelBlackList.remove(index);
         });
 
+        this.comboLauncher.setSelectedIndex(0);
         this.loadDevices();
         this.setPreviousData(project);
     }
@@ -66,11 +73,12 @@ public class PanelPush {
     private void setPreviousData(Project project) {
         ICService service = ICService.Companion.get(project);
         this.fieldDir.setText(service.getDir());
-        this.checkRunIC.setSelected(service.getMustRunIC());
+        this.checkRunIC.setSelected(service.getMustRunApp());
         this.checkPushToRoot.setSelected(service.getMustPushToRoot());
         service.getPushBlackList().forEach(s -> {
             this.modelBlackList.addElement(s);
         });
+        this.comboLauncher.getModel().setSelectedItem(service.getLauncherType());
 
         String serial = service.getSerial();
         if (this.listDevices.getModel().getSize() == 1) {
@@ -111,7 +119,11 @@ public class PanelPush {
         return this.fieldDir.getText();
     }
 
-    boolean mustRunIC() {
+    public LauncherType getLauncherType() {
+        return (LauncherType) this.comboLauncher.getSelectedItem();
+    }
+
+    boolean mustRunApp() {
         return this.checkRunIC.isSelected();
     }
 

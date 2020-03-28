@@ -19,13 +19,10 @@ import se.vidstige.jadb.RemoteFile
 import java.io.File
 
 object AdbPusher {
-    private const val HORIZON_MODS_DIR = "/storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/" //TODO: rewrite
-    private const val MODS_DIR = "/storage/emulated/0/games/com.mojang/mods/"
-    const val IC_PKG = "com.zhekasmirnov.innercore"
 
-    fun push(device: JadbDevice, project: Project, file: VirtualFile) {
+    fun push(device: JadbDevice, modsDir: String, project: Project, file: VirtualFile) {
         val service = ICService.get(project)
-        val dir = HORIZON_MODS_DIR + service.dir
+        val dir = modsDir + service.dir
         service.lastPath = file.path
 
         val runnable = Runnable {
@@ -58,9 +55,6 @@ object AdbPusher {
                 indicator.text2 = it.path
                 indicator.fraction = ++fraction / files.size
             }
-
-            if (service.mustRunIC)
-                device.restartApp(IC_PKG)
 
             val delta = System.currentTimeMillis() - startTime
             val deltaFormatted = if (delta > 1000) (delta / 1000).toString() + "s" else delta.toString() + "ms"
