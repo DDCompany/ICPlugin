@@ -1,0 +1,47 @@
+<templateSet group="InnerCore">
+    <template name="tile"
+              value="TileEntity.registerPrototype($blockId$, {&#10;defaultValues: {$defValues$},&#10; tick: function() {&#10;$END$&#10;}&#10;});"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="blockId" alwaysStopAt="true"/>
+        <variable name="defValues" alwaysStopAt="true"/>
+
+        <context>
+            <option name="JS_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <template name="gobj"
+              value="new GameObject($name$, {&#10;init: function(){&#10;&#10;},&#10;&#10;loaded: function(){&#10;&#10;},&#10;&#10;update: function(){&#10;$END$&#10;}&#10;});"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="name" alwaysStopAt="true"/>
+
+        <context>
+            <option name="JS_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <template name="saver"
+              value="Saver.addSavesScope($name$,&#10;function read(scope) {&#10;$END$&#10;},&#10;function save() {&#10;return {};&#10;}&#10;);"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="name" alwaysStopAt="true"/>
+
+        <context>
+            <option name="JS_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <template name="sui"
+              value="const $varName$ = new UI.StandartWindow({&#10;standart: {&#10;header: {&#10;text: {&#10;text: $title$&#10;}&#10;},&#10;inventory: {&#10;standart: true&#10;},&#10;background: {&#10;standart: true&#10;}&#10;},&#10;drawing: [],&#10;elements: {}&#10;});"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="varName" alwaysStopAt="true"/>
+        <variable name="title" alwaysStopAt="true"/>
+
+        <context>
+            <option name="JS_STATEMENT" value="true"/>
+        </context>
+    </template>
+</templateSet>

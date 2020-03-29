@@ -10,6 +10,8 @@
     <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="com.ddcompany.innercore.completion.ICTemplateProvider"/>
+
         <directoryProjectGenerator implementation="com.ddcompany.innercore.project.ICProjectGenerator"/>
 
         <projectService serviceInterface="com.ddcompany.innercore.ICService"
