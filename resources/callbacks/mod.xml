@@ -1,0 +1,5 @@
+<callback-group name="Mod">
+    <callback name="ModDirLoaded"/>
+    <callback name="PreBlocksDefined"/>
+    <callback name="BlocksDefined"/>
+</callback-group>

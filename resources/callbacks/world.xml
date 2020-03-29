@@ -1,0 +1,16 @@
+<callback-group name="World">
+    <callback name="LevelCreated"/>
+    <callback name="LevelSelected" arguments="levelName, levelPath"/>
+    <callback name="LevelPreLoaded"/>
+    <callback name="LevelLoaded"/>
+    <callback name="LevelPreLeft"/>
+    <callback name="LevelLeft"/>
+    <callback name="DestroyBlock" arguments="coords, block, player"/>
+    <callback name="DestroyBlockStart" arguments="coords, block, player"/>
+    <callback name="DestroyBlockContinue" arguments="coords, block, progress, player"/>
+    <callback name="Explosion" arguments="coords, params"/>
+    <callback name="RedstoneSignal" arguments="params"/>
+    <callback name="BuildBlock" arguments="coords, block, entity"/>
+    <callback name="CustomBlockTessellation" arguments="api, coords, block, boolean"/>
+    <callback name="DimensionLoaded" arguments="dimension"/>
+</callback-group>

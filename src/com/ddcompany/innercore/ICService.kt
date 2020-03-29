@@ -6,6 +6,7 @@ import com.intellij.openapi.components.PersistentStateComponent
 import com.intellij.openapi.components.ServiceManager
 import com.intellij.openapi.components.State
 import com.intellij.openapi.components.Storage
+import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.project.Project
 import com.intellij.util.xmlb.XmlSerializerUtil
 import com.intellij.util.xmlb.annotations.Transient
@@ -13,6 +14,8 @@ import com.intellij.util.xmlb.annotations.Transient
 @State(name = "ICService", storages = [Storage("innerCore.xml")])
 class ICService : PersistentStateComponent<ICService> {
     companion object {
+        val logger = Logger.getInstance("ICPlugin")
+
         fun get(project: Project): ICService {
             val service = ServiceManager.getService(project, ICService::class.java)
             if (!service.mod.inilialized)

@@ -1,0 +1,9 @@
+<callback-group name="Game">
+    <callback name="Tick"/>
+    <callback name="NativeGuiChanged" arguments="screenName"/>
+    <callback name="PreLoaded"/>
+    <callback name="APILoaded"/>
+    <callback name="ModsLoaded"/>
+    <callback name="PostLoaded"/>
+    <callback name="AppSuspended"/>
+</callback-group>

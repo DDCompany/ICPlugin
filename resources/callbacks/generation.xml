@@ -1,0 +1,6 @@
+<callback-group name="Generation">
+    <callback name="GenerateNetherChunk" arguments="chunkX, chunkZ, random"/>
+    <callback name="GenerateEndChunk" arguments="chunkX, chunkZ, random"/>
+    <callback name="GenerateChunk" arguments="chunkX, chunkZ, random"/>
+    <callback name="GenerateChunkUndeground" arguments="chunkX, chunkZ, random"/>
+</callback-group>

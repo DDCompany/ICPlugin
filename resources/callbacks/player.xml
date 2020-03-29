@@ -1,0 +1,5 @@
+<callback-group name="Player">
+    <callback name="PlayerAttack" arguments="player, victim"/>
+    <callback name="ExpAdd" arguments="amount"/>
+    <callback name="ExpLevelAdd" arguments="levelAmount"/>
+</callback-group>

@@ -1,0 +1,5 @@
+<callback-group name="Chat">
+    <callback name="NativeCommand" arguments="str"/>
+    <callback name="ClientChat" arguments="str"/>
+    <callback name="ServerChat" arguments="str"/>
+</callback-group>

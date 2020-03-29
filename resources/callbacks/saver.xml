@@ -1,0 +1,4 @@
+<callback-group name="Saver">
+    <callback name="ReadSaves"/>
+    <callback name="WriteSaves"/>
+</callback-group>

@@ -1,0 +1,7 @@
+<callback-group name="Entity">
+    <callback name="EntityAdded" arguments="entity"/>
+    <callback name="EntityRemoved" arguments="entity"/>
+    <callback name="EntityDeath" arguments="entity, attacker, damageType"/>
+    <callback name="EntityHurt" arguments="attacker, victim, damageValue, damageType, someBool1, someBool2"/>
+    <callback name="EntityInteract" arguments=""/>
+</callback-group>

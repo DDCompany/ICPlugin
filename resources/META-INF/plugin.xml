@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.ddcompany.innercore</id>
-    <name>InnerIntegration</name>
+    <name>ICPlugin</name>
     <version>1.1</version>
     <vendor>DDCompany</vendor>
 
@@ -47,6 +47,10 @@
         <action id="com.ddcompany.innercore.actions.ActionTreePush"
                 class="com.ddcompany.innercore.actions.ActionTreePush" text="Push to Device">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+        <action id="ICPlugin.GenerateCallback" class="com.ddcompany.innercore.actions.editor.ActionGenerateCallback"
+                text="Generate Callback">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>

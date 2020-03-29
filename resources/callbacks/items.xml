@@ -1,0 +1,12 @@
+<callback-group name="Items">
+    <callback name="ItemUse" arguments="coords, item, block"/>
+    <callback name="FoodEaten" arguments="food, satRatio"/>
+    <callback name="ItemIconOverride" arguments="item"/>
+    <callback name="ItemUseNoTarget" arguments="item"/>
+    <callback name="ItemUsingReleased" arguments="item"/>
+    <callback name="ItemUsingComplete" arguments="item"/>
+    <callback name="ItemDispensed" arguments="item"/>
+    <callback name="ProjectileHit" arguments="projectile, item, target"/>
+    <callback name="ProjectileHitBlock" arguments="projectile, coords, block"/>
+    <callback name="ProjectileHitEntity" arguments="projectile, entity"/>
+</callback-group>
