@@ -31,6 +31,12 @@ class DialogCreateItem(
 
         panel.comboTextures.renderer = object : BasicComboBoxRenderer() {
             override fun getListCellRendererComponent(list: JList<*>?, value: Any?, index: Int, isSelected: Boolean, cellHasFocus: Boolean): Component {
+                if (value == null) {
+                    text = ""
+                    icon = null
+                    return this
+                }
+
                 val textureIcon = value as TextureIcon
                 text = textureIcon.name + "_" + textureIcon.meta
                 icon = textureIcon.scaledIcon
