@@ -1,8 +1,9 @@
 <idea-plugin>
     <id>com.ddcompany.innercore</id>
     <name>ICPlugin</name>
-    <version>1.1</version>
+    <version>2.1</version>
     <vendor>DDCompany</vendor>
+    <description>Plugin for developing InnerCore engine mods</description>
 
     <idea-version since-build="173.0"/>
 
