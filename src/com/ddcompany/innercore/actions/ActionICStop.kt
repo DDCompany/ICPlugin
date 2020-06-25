@@ -12,7 +12,7 @@ class ActionICStop : AnAction(ICIcons.STOP_16) {
         val service = ICService.get(event.project!!)
         if (service.serial.isNotEmpty()) {
             val device = AdbPusher.getDevice(service.serial)
-            device?.killApp(service.launcherType.pkg)
+            device?.killApp(AdbPusher.HORIZON_PKG)
         }
     }
 }

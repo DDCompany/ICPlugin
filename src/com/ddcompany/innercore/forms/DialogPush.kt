@@ -37,12 +37,11 @@ class DialogPush(private val project: Project?, private val file: VirtualFile) :
         service.mustPushToRoot = this.panel.mustPushToRoot()
         service.serial = device.serial
         service.pushBlackList = this.panel.blackList
-        service.launcherType = this.panel.launcherType
 
-        AdbPusher.push(device, service.launcherType.modsDir, project, file)
+        AdbPusher.push(device, AdbPusher.HORIZON_MODS_DIR, project, file)
 
         if (service.mustRunApp)
-            device.restartApp(service.launcherType.pkg);
+            device.restartApp(AdbPusher.HORIZON_PKG);
 
         this.close(0)
     }

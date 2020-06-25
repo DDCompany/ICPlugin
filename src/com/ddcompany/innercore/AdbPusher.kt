@@ -1,7 +1,6 @@
 package com.ddcompany.innercore
 
 import com.ddcompany.innercore.extensions.mkdir
-import com.ddcompany.innercore.extensions.restartApp
 import com.intellij.openapi.application.ex.ApplicationManagerEx
 import com.intellij.openapi.progress.ProgressManager
 import com.intellij.openapi.project.Project
@@ -19,6 +18,8 @@ import se.vidstige.jadb.RemoteFile
 import java.io.File
 
 object AdbPusher {
+    const val HORIZON_PKG = "com.zheka.horizon"
+    const val HORIZON_MODS_DIR = "/storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/"
 
     fun push(device: JadbDevice, modsDir: String, project: Project, file: VirtualFile) {
         val service = ICService.get(project)

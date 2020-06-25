@@ -1,14 +1,17 @@
 package com.ddcompany.innercore.actions.editor
 
 import com.ddcompany.innercore.ICService
-import com.intellij.util.ResourceUtil
+import com.google.common.io.Resources
 import org.w3c.dom.Element
 import java.io.File
+import java.nio.charset.Charset
 import javax.xml.parsers.DocumentBuilderFactory
 
 val callbackGroups: ArrayList<CallbackGroup> by lazy {
     val list = ArrayList<CallbackGroup>()
-    val dir = File(ResourceUtil.getResource(ICCallback::class.java, "callbacks/", "world.xml").file).parentFile
+    val dir = File(ICCallback::class.java.getResource("/callbacks").file)
+    println(Resources.getResource("/callbacks"))
+    println(Resources.toString(Resources.getResource("/callbacks"), Charset.forName("UTF-8")))
     val builder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
 
     dir.listFiles { file ->
