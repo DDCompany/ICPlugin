@@ -1,9 +1,11 @@
 package com.ddcompany.innercore.forms;
 
+import com.ddcompany.innercore.ICIcons;
 import com.ddcompany.innercore.ICService;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.util.PlatformIcons;
 import se.vidstige.jadb.JadbConnection;
 import se.vidstige.jadb.JadbDevice;
 import se.vidstige.jadb.JadbException;
@@ -121,6 +123,7 @@ public class PanelPush {
         public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
             super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
             this.setText(((JadbDevice) value).getSerial());
+            this.setIcon(ICIcons.INSTANCE.getPHONE_16());
             return this;
         }
     }
@@ -136,6 +139,7 @@ public class PanelPush {
         public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
             super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
             this.setText(((String) value).replaceFirst(Objects.requireNonNull(project.getBasePath()), ""));
+            this.setIcon(PlatformIcons.FOLDER_ICON);
             return this;
         }
     }

@@ -41,7 +41,7 @@ class DialogPush(private val project: Project?, private val file: VirtualFile) :
         AdbPusher.push(device, AdbPusher.HORIZON_MODS_DIR, project, file)
 
         if (service.mustRunApp)
-            device.restartApp(AdbPusher.HORIZON_PKG);
+            device.restartApp(AdbPusher.HORIZON_PKG)
 
         this.close(0)
     }
