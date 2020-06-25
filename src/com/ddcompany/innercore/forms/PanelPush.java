@@ -4,7 +4,6 @@ import com.ddcompany.innercore.ICService;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.ui.JBColor;
 import se.vidstige.jadb.JadbConnection;
 import se.vidstige.jadb.JadbDevice;
 import se.vidstige.jadb.JadbException;
@@ -68,9 +67,7 @@ public class PanelPush {
         this.fieldDir.setText(service.getDir());
         this.checkRunIC.setSelected(service.getMustRunApp());
         this.checkPushToRoot.setSelected(service.getMustPushToRoot());
-        service.getPushBlackList().forEach(s -> {
-            this.modelBlackList.addElement(s);
-        });
+        service.getPushBlackList().forEach(s -> this.modelBlackList.addElement(s));
 
         String serial = service.getSerial();
         if (this.listDevices.getModel().getSize() == 1) {
@@ -119,21 +116,16 @@ public class PanelPush {
         return this.checkPushToRoot.isSelected();
     }
 
-    private class DevicesCellRenderer extends JLabel implements ListCellRenderer<JadbDevice> {
+    private class DevicesCellRenderer extends DefaultListCellRenderer {
         @Override
-        public Component getListCellRendererComponent(JList<? extends JadbDevice> list, JadbDevice value, int index, boolean isSelected, boolean cellHasFocus) {
-            this.setText(value.getSerial());
-
-            if (isSelected) {
-                this.setBackground(JBColor.BLUE);
-                this.setForeground(JBColor.RED);
-            }
-
+        public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+            super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+            this.setText(((JadbDevice) value).getSerial());
             return this;
         }
     }
 
-    private class BlackListCellRenderer extends JLabel implements ListCellRenderer<String> {
+    private class BlackListCellRenderer extends DefaultListCellRenderer {
         private final Project project;
 
         BlackListCellRenderer(Project project) {
@@ -141,14 +133,9 @@ public class PanelPush {
         }
 
         @Override
-        public Component getListCellRendererComponent(JList<? extends String> list, String value, int index, boolean isSelected, boolean cellHasFocus) {
-            this.setText(value.replaceFirst(Objects.requireNonNull(project.getBasePath()), ""));
-
-            if (isSelected) {
-                this.setBackground(JBColor.BLUE);
-                this.setForeground(JBColor.RED);
-            }
-
+        public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+            super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+            this.setText(((String) value).replaceFirst(Objects.requireNonNull(project.getBasePath()), ""));
             return this;
         }
     }

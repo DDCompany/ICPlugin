@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2889b2f9-dea9-46f9-a2ab-b0ab79fdad5f" name="Default Changelist" comment="Изменён путь для пушинга модов">
-      <change afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/LauncherType.kt" afterDir="false" />
+    <list default="true" id="2889b2f9-dea9-46f9-a2ab-b0ab79fdad5f" name="Default Changelist" comment="add horizon support">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/AdbPusher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/AdbPusher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/ICService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/ICService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/ActionICStop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/ActionICStop.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/ActionPush.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/ActionPush.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/DialogPush.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/DialogPush.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/FormPush.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/FormPush.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/PanelPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/PanelPush.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,26 +20,106 @@
   <component name="FavoritesManager">
     <favorites_list name="ICPlugin" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ddcompany/innercore/forms/PanelPush.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getListCellRendererComponent#0;class#BlackListCellRenderer#0;class#PanelPush#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Kotlin Enum" />
+        <option value="Action" />
+        <option value="ApplicationServiceClass" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/ddcompany/innercore/forms/PanelPush.java" />
+      </list>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="108" />
+    <option name="y" value="164" />
+    <option name="width" value="1372" />
+    <option name="height" value="738" />
+  </component>
   <component name="ProjectId" id="1YAnLlDFI0tS2pHuKIyMikro9Po" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ICPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="innercore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="innercore" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="innercore" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="PanelPush" type="e9f4de52:FormNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,19 +132,36 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last.edited.regexp" value="0453495834" />
-    <property name="last_opened_file_path" value="C:/Program Files/JetBrains/PhpStorm 2019.3.4/plugins/JavaScriptLanguage/lib/semver4j-2.2.0.jar!/" />
+    <property name="last_opened_file_path" value="C:/Program Files/JetBrains/PhpStorm 2020.1.2/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.ddcompany.innercore.actions.editor" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Run" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="ICPlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <alternative-path path="PhpStorm PS-193.6911.26" alternative-path-enabled="true" />
+      <alternative-path path="C:/Program Files/JetBrains/PhpStorm 2020.1.2" alternative-path-enabled="true" />
       <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,18 +207,70 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13958333" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" weight="0.3297414" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Изменён путь для пушинга модов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменён путь для пушинга модов" />
+    <MESSAGE value="add horizon support" />
+    <MESSAGE value="add generate callback action" />
+    <MESSAGE value="add live templates" />
+    <MESSAGE value="fix create item error" />
+    <MESSAGE value="Changed plugin.xml" />
+    <MESSAGE value="Changed plugin name" />
+    <MESSAGE value="Removed InnerCore support" />
+    <MESSAGE value="runProcessWithProgressSynchronously changed to run" />
+    <option name="LAST_COMMIT_MESSAGE" value="runProcessWithProgressSynchronously changed to run" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="167" width="1159" height="823" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585413998483">
+    <state x="414" y="167" width="1159" height="823" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593112497707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="167" width="1159" height="823" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585413998483" />
+    <state x="414" y="167" width="1159" height="823" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593112497707" />
+    <state x="322" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585485362785">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="322" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585485362785" />
+    <state x="721" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1593112886802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="172" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593112886802" />
     <state x="786" y="406" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585413400612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -135,61 +279,162 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="97" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585413341286" />
-    <state x="504" y="0" key="CommitChangelistDialog2" timestamp="1585413504560">
+    <state x="466" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585478325227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="504" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585413504560" />
-    <state x="544" y="217" key="FileChooserDialogImpl" timestamp="1585413331813">
+    <state x="466" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585478325227" />
+    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2" timestamp="1593113238569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="217" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585413331813" />
-    <state width="1921" height="382" key="GridCell.Tab.0.bottom" timestamp="1585414178650">
+    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593113238569" />
+    <state x="544" y="217" key="FileChooserDialogImpl" timestamp="1592646813310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178650" />
-    <state width="1921" height="382" key="GridCell.Tab.0.center" timestamp="1585414178649">
+    <state x="544" y="217" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592646813310" />
+    <state width="1921" height="346" key="GridCell.Tab.0.bottom" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178649" />
-    <state width="1921" height="382" key="GridCell.Tab.0.left" timestamp="1585414178649">
+    <state width="1921" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.0.center" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178649" />
-    <state width="1921" height="382" key="GridCell.Tab.0.right" timestamp="1585414178649">
+    <state width="1921" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.0.left" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178649" />
-    <state width="1921" height="382" key="GridCell.Tab.1.bottom" timestamp="1585414178650">
+    <state width="1921" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.0.right" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178650" />
-    <state width="1921" height="382" key="GridCell.Tab.1.center" timestamp="1585414178650">
+    <state width="1921" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.1.bottom" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178650" />
-    <state width="1921" height="382" key="GridCell.Tab.1.left" timestamp="1585414178650">
+    <state width="1921" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.1.center" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178650" />
-    <state width="1921" height="382" key="GridCell.Tab.1.right" timestamp="1585414178650">
+    <state width="1921" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.1.left" timestamp="1593113666714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="382" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585414178650" />
+    <state width="1921" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
+    <state width="1921" height="346" key="GridCell.Tab.1.right" timestamp="1593113666714">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593113666714" />
     <state x="711" y="168" key="RollbackChangesDialog" timestamp="1585413524688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="168" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585413524688" />
-    <state x="166" y="0" key="SettingsEditor" timestamp="1582452035791">
+    <state x="160" y="0" key="SettingsEditor" timestamp="1592646816903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="166" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582452035791" />
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1582451945853">
+    <state x="160" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592646816903" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1592645362288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582451945853" />
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582913126082">
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592645362288" />
+    <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1593113893893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582913126082" />
+    <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593113893893" />
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585418275350">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585418275350" />
+    <state x="605" y="61" width="710" height="918" key="find.popup" timestamp="1585475665918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="61" width="710" height="918" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585475665918" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1585497042668">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585497042668" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/ddcompany/innercore/forms/PanelPush.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getListCellRendererComponent#0;class#BlackListCellRenderer#0;class#PanelPush#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>PhpStorm PS-201.7846.90</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
