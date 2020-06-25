@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.ddcompany.innercore</id>
-    <name>ICPlugin</name>
+    <name>Horizon Support</name>
     <version>2.1</version>
     <vendor>DDCompany</vendor>
     <description>Plugin for developing InnerCore engine mods</description>
