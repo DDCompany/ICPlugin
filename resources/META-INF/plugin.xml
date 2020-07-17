@@ -42,11 +42,6 @@
                     text="Stop InnerCore"/>
         </group>
 
-        <group id="ICPlugin.MENU">
-            <add-to-group group-id="FileMenu" relative-to-action="InvalidateCaches" anchor="after"/>
-            <action id="ICPlugin.ActionAddLibrary" class="com.ddcompany.innercore.actions.ActionAddLibrary"/>
-        </group>
-
         <action id="com.ddcompany.innercore.actions.ActionTreePush"
                 class="com.ddcompany.innercore.actions.ActionTreePush" text="Push to Device">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>

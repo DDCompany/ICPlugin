@@ -19,9 +19,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2889b2f9-dea9-46f9-a2ab-b0ab79fdad5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/editor/ICCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/editor/ICCallback.kt" afterDir="false" />
+    <list default="true" id="2889b2f9-dea9-46f9-a2ab-b0ab79fdad5f" name="Default Changelist" comment="Fixed callbacks exception">
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Armor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Block.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Container.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Debug.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/FileTools.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Game.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/GenerationUtils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Library.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/LiquidRegistry.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/ModAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Native.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Particles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Saver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Threading.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/TileEntity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/ToolAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/Types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/api/World.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/actions/ActionAddLibrary.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ddcompany/innercore/project/ICProjectGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ddcompany/innercore/project/ICProjectGenerator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +192,8 @@
     <MESSAGE value="runProcessWithProgressSynchronously changed to run" />
     <MESSAGE value="Fixed list renderer" />
     <MESSAGE value="Added icons to list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icons to list" />
+    <MESSAGE value="Fixed callbacks exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed callbacks exception" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -181,14 +203,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="167" width="1159" height="823" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593112497707" />
+    <state x="663" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594985779601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594985779601" />
     <state x="721" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1593112886802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="172" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593112886802" />
-    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2" timestamp="1593113238569">
+    <state x="624" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594985948614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593113238569" />
+    <state x="624" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594985948614" />
+    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2" timestamp="1594985878286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="504" y="0" width="1196" height="1031" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594985878286" />
     <state x="544" y="217" key="FileChooserDialogImpl" timestamp="1592646813310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -245,10 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="173" y="19" width="1232" height="903" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594982590407" />
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1592645362288">
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1594985872396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592645362288" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594985872396" />
     <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1593113893893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
