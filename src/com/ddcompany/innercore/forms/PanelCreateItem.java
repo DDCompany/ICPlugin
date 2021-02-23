@@ -1,6 +1,5 @@
 package com.ddcompany.innercore.forms;
 
-import com.ddcompany.innercore.index.TextureIcon;
 import com.ddcompany.innercore.mod.ICItemType;
 
 import javax.swing.*;
@@ -9,7 +8,6 @@ public class PanelCreateItem {
     private JPanel area;
     private JTextField fieldID;
     private JTextField fieldName;
-    private JComboBox<TextureIcon> comboTextures;
     private JSlider sliderStackSize;
     private JLabel labelStackSize;
     private JTextField fieldBurnTime;
@@ -73,10 +71,6 @@ public class PanelCreateItem {
 
     public boolean isGlint() {
         return checkGlint.isSelected();
-    }
-
-    public JComboBox<TextureIcon> getComboTextures() {
-        return comboTextures;
     }
 
     public JComboBox getComboTypes() {
