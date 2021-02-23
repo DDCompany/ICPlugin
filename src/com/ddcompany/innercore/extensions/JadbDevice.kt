@@ -7,7 +7,7 @@ fun JadbDevice.mkdir(path: String) {
 }
 
 fun JadbDevice.execApp(pkg: String) {
-    this.executeShell("monkey", "-p", pkg, "-c", "android.intent.category.LAUNCHER", "1");
+    this.executeShell("monkey", "-p", pkg, "-c", "android.intent.category.LAUNCHER", "1")
 }
 
 fun JadbDevice.killApp(pkg: String) {
